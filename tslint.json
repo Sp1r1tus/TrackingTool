@@ -1,0 +1,22 @@
+{
+  "extends": [ "tslint:recommended", "tslint-react", "tslint-config-prettier" ],
+  "rules": {
+    "ordered-imports": false, // disable "Import sources within a group must be alphabetized"
+    "no-console": false, // enable console-log for ts
+    "object-literal-sort-keys": false, //Disable for typescript
+    "jsx-no-lambda": false
+  },
+  "jsRules": {
+    "ordered-imports": false, // disable "Import sources within a group must be alphabetized"
+    "no-console": false, // enable console-log for js
+    "object-literal-sort-keys": false, //Disable for javascript
+    "jsx-no-lambda": false
+  },
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts",
+      "coverage/lcov-report/*.js"
+    ]
+  }
+}
